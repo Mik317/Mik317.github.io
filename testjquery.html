@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mik317 Site</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+#init{
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom right, #198893, #ffa807);
+    align-content: center;
+}
+#ptt{
+    color: rgb(14, 94, 102);
+}
+</style>
+
+<body>
+<div class="container-fluid" id="init">
+
+<div id="pb">
+<br><div class="progress" id="progbar">
+  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div><br>
+<script>
+$(document).ready(function(){
+	setTimeout(function(){
+		$("#pb").hide();}, 750);
+    });</script>
+</div>
+<ul class="nav nav-tabs" id="van" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="contentTab" style="padding-left: 3%;">
+
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <script>$(document).ready(function(){
+    $("#home").fadeIn(10000);
+});</script>
+  <br><center><h3 class="display-3" style="color: rgb(14, 94, 102);">My Site For Passion and Dedition</h3></center>
+  <br>
+  <center><blockquote class="blockquote"><cite >The Most Important Thing Is No Stop Questioning</cite>
+      <p class="font-italic lead">Albert Einstein</p>
+  </blockquote></center><br><br>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://github.com/Mik317/Not-XSSer/raw/master/images/automated.png" alt="Not XSSer">
+  <div class="card-body">
+    <h5 class="card-title">Not XSSer</h5>
+    <p class="card-text">Attack Websites with XSS Attacks!</p>
+    <a href="https://github.com/Mik317/Not-XSSer" class="btn btn-primary">Go to the Project</a>
+  </div>
+</div><br><br><br>
+<footer class="page-footer blue" style="bottom: 0mm; background-color: rgb(40, 43, 43);">
+<div class="container-fluid">
+<footer class="page-footer indigo center-on-small-only pt-0"></footer></div></div></footer>
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <center><br><h3 class="display-3" style="color: rgb(14, 94, 102);">Fighter: On the Web And On the Ring!</h3></center>
+  <br><center><div class="card" style="width:400px">
+  <img class="card-img-top" src="https://avatars2.githubusercontent.com/u/33063403?s=400&u=65f8d7d4e6d5a6a342b4e312d4d83b036e6def94&v=4" alt="Fight!">
+  <div class="card-body">
+    <h4 class="card-title">Michele Romano</h4>
+    <p class="card-text">Fighter,Programmer and Penetration Tester.</p>
+    <a href="https://github.com/Mik317/" class="btn btn-primary">See On Github</a>
+  </div>
+</div></center><br>
+<h3 class="display-3 font-italic" style="color:rgb(14, 94, 102);">My Knowledges:</h3>
+<ul class="list-group">
+    <a href="#py" class="list-group-item list-group-item-success">Python <div class="progress"><div class="progress-bar" style="width:85%"></div></div></a>
+    <a href="#c" class="list-group-item list-group-item-success">C <div class="progress"><div class="progress-bar" style="width:50%"></div></div></a>
+    <a href="#java" class="list-group-item list-group-item-success">Java And JavaFX <div class="progress"><div class="progress-bar" style="width:90%"></div></div></a>
+    <a href="#web" class="list-group-item list-group-item-info">Web Dev (DJango, PHP, HTML, JSON, JS, Bootstrap, JQuery, CSS, SQL) <div class="progress"><div class="progress-bar" style="width:71%"></div></div></a>
+    <a href="#pt" class="list-group-item list-group-item-danger">Penetration Tester <div class="progress"><div class="progress-bar" style="width:98%"></div></div></a><br>
+</ul>
+
+<div id="pt"><h3 class="display-5 font-italic" style="color: rgb(14, 94, 102);">Penetration Tester:</h3>
+<p id="ptt">My favourite hobby is Cyber Sec:
+I love CTFs, find bugs in application, inject webshell in sites and secure it.</p>
+<p id="ptt">I'm an administrator of the BlackBit Team, classified on the 275' position (world rating) on the CTF 2017.
+We can help you analyzing your site or infrastructure,create tools for protect itself and  mitigating attacks.</p><br>
+</div>
+  </div>
+  
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <br><center><h3 class="display-3" style="color:rgb(14, 94, 102);">Contact Me!</h3></center><br>
+ <div class="alert alert-primary" role="alert">
+ Leave Your Mail And Your Message</div>
+  <form>
+  <div class="form-group">
+  <strong class="font-weight-normal">E-Mail:</strong>
+    <input type="email" class="form-control" id="email" placeholder="your@mail.com"><br>
+      <strong class="font-weight-normal">Subject:</strong>
+    <input type="text" class="form-control" id="subject" placeholder="Insert the Subject"><br>
+      <strong class="font-weight-normal">Message:</strong>
+    <textarea class="form-control" rows="5" id="mess" placeholder="Insert the Message"></textarea>
+  </div></form><br>
+  <script>function send() {
+  setTimeout(function() {
+    var email = window.open("mailto:kickmik.mr@hotmail.com" + "?subject=" + document.getElementById('subject').value + "&body=" +
+    		document.getElementById('mess').value + 
+    		"%0A%0A%0Afrom: "+ document.getElementById('email').value);
+  }, 500);
+}</script>
+<button type="button" class="btn btn-info" onclick="send()">Send</button><br></br>
+  </div>
+</div>
+</div>
+</body>
+</html>

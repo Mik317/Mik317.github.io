@@ -17,11 +17,85 @@
 #ptt{
     color: rgb(14, 94, 102);
 }
+.particle-network-animation {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    height: 100vh;
+  
+  &::before {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center center;
+  background-size: cover;
+    opacity: 0.2;
+      background-color: rgb(14, 94, 102);
+  }
+}
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(14, 94, 102);
+}
+$duration: 25s;
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  animation: glow-1-move $duration linear infinite both;
+}
+@keyframes glow-1-move {
+  from {
+    transform: translate(-100%, 100%);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  animation: glow-2-move $duration linear $duration / 3 infinite both;
+}
+@keyframes glow-2-move {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  animation: glow-3-move $duration linear $duration / 3 * 2 infinite both;
+}
+@keyframes glow-3-move {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(0%, -100%);
+  }
+}
 </style>
 
 <body>
 <div class="container-fluid" id="init">
-
 <div id="pb">
 <br><div class="progress" id="progbar">
   <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -34,13 +108,13 @@ $(document).ready(function(){
 </div>
 <ul class="nav nav-tabs" id="van" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="home-tab"  style="color: rgb(44, 53, 53)" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="profile-tab" style="color: rgb(44, 53, 53)" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    <a class="nav-link" id="contact-tab" style="color: rgb(44, 53, 53)"  data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
   </li>
 </ul>
 <div class="tab-content" id="contentTab" style="padding-left: 3%;">
@@ -49,7 +123,11 @@ $(document).ready(function(){
   <script>$(document).ready(function(){
     $("#home").fadeIn(10000);
 });</script>
-  <br><center><h3 class="display-3" style="color: rgb(14, 94, 102);">My Site For Passion and Dedition</h3></center>
+
+<div class="particle-network-animation"></div>
+<script src="tree.js"></script>
+
+<br><center><h3 class="display-3" style="color: rgb(14, 94, 102);">My Site For Passion and Dedition</h3></center>
   <br>
   <center><blockquote class="blockquote"><cite >The Most Important Thing Is No Stop Questioning</cite>
       <p class="font-italic lead">Albert Einstein</p>
@@ -88,7 +166,7 @@ $(document).ready(function(){
 <div id="pt"><h3 class="display-5 font-italic" style="color: rgb(14, 94, 102);">Penetration Tester:</h3>
 <p id="ptt">My favourite hobby is Cyber Sec:
 I love CTFs, find bugs in application, inject webshell in sites and secure it.</p>
-<p id="ptt">I'm an administrator of the BlackBit Team, and the security manager of the BranchFlow project.
+<p id="ptt">I'm an administrator of the BlackBit Team, classified on the 275' position (world rating) on the CTF 2017.
 We can help you analyzing your site or infrastructure,create tools for protect itself and  mitigating attacks.</p><br>
 </div>
   </div>

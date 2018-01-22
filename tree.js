@@ -1,6 +1,6 @@
 (function() {
 
-	var ParticleNetworkAnimation, PNA;
+	var ParticleNetworkAnimation, PNA; //Var Initializing
 	ParticleNetworkAnimation = PNA = function() {};
 
 	PNA.prototype.init = function(element) {

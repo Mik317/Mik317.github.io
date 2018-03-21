@@ -1,0 +1,6 @@
+<xml>
+<value>
+<script>alert(1)</script>
+<value><![CDATA[<script>confirm(document.domain)</script>]]></value>
+</value>
+</xml>

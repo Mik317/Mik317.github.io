@@ -1,6 +1,6 @@
 <xml>
-<value>
-<script>alert(1)</script>
+   <value>
+      <script>alert(1)</script>
+  </value>
   <value><script><![CDATA[<script>confirm(document.domain)</script>]]></script></value>
-</value>
 </xml>

@@ -77,7 +77,7 @@
 
 	var ParticleNetwork = function(parent) {
 		this.options = {
-			velocity: 0.5, // the higher the faster
+			velocity: 1.0, // the higher the faster
 			density: 80000, // the lower the denser
 			netLineDistance: 250,
 			netLineColor: '#03536d', //modified hic

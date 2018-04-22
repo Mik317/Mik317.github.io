@@ -6,12 +6,12 @@
   <link>javascript:alert(document.domain)</link>
   <description>al</description>
   <item>
-    <title>ese</title>
+    <title>" onmouseover=alert()</title>
     <link>file:///etc/passwd</link>
-    <description>test</description>
+    <description>"</div><script>alert()</script>"</description>
   </item>
   <item>
-    <title>teste</title>
+    <title>" onmouseover=alert()</title>
     <link><script>alert(document.domain)</script></link>
     <description>self</description>
   </item>

@@ -1,1 +1,1 @@
-<STYLE>@import javascript:alert("XSS")';</STYLE>
+<STYLE>@import javascript:alert("XSS");</STYLE>

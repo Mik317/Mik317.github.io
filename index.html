@@ -63,15 +63,8 @@ $(document).ready(function(){
 });</script>
 
 <div class="particle-network-animation"></div>
-	  <script>function detectmob() {
-                    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-                       return true;
-                    } else {
-                       return false;
-                     }
-		  }
-	  
-	  if (!detectmob()){document.write("<script src=\"tree.js\"><\/script>");}</script>
+	  <script>var touchDevice = ('ontouchstart' in document.documentElement);	  
+	  if (!touchDevice){document.write("<script src=\"tree.js\"><\/script>");}</script>
 <br><center><h3 class="display-3" style="color: rgb(14, 94, 102);">My Site For Passion and Dedition</h3></center>
   <br>
   <center><blockquote class="blockquote"><cite >The Most Important Thing Is No Stop Questioning</cite>
